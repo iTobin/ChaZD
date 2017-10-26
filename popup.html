@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <title>Youdao Dictionary</title> 
+    <title>Translate</title>
     <link rel="stylesheet" type="text/css" href="public/css/style.min.css">
 </head>
-<body>
+<body >
   <div class="input-container">
     <input id="query-word" type="text" name="" placeholder="" value="" class="input-area">
     <button id="search" class="query-button"></button>
@@ -13,7 +13,7 @@
 
   <div id="query-result" class="result-container unshow"></div>
 
-  <div class="tips-container unshow" id="tips">
+  <div class="tips-container" id="tips">
     <p>
       Tips: 你可以通过“Ctrl+Shift+F”快速启动词典，
       也可以在<span id="key-set" class="link">这里</span>自定义快捷键哦:)
@@ -21,10 +21,9 @@
     <p>
       Tips 2: 如出现无法查词的问题，请在设置中关闭使用 HTTPS 接口
     </p>
-    <div id="turn-off-tips">不再显示Tips</div>
   </div>
 
-  <div class="setting-block" id="settings">
+  <div class="setting-block active" id="settings">
     <div class="top-menu">
       <input type="checkbox" name="linkQuery" id="linkQuery"><label for="linkQuery">使用 shift 辅助链接划词</label>
       <a href="#" title="如果想对某个链接上的单词进行划词，为避免无法取词的问题，可以按住shift键，此时链接会变成可取词的状态，这样就可以轻松划词查词啦:)" class="link-query help">(鼠标悬停查看说明)</a>
@@ -32,9 +31,8 @@
     <div class="top-menu">
       <label for="useCtrl" class="sub-title">使用
       <select id="open-api">
-        <option value="shanbay">扇贝单词</option>
-        <option value="xyuu">好学单词</option>
         <option value="youdao">有道翻译</option>
+        <option value="shanbay">扇贝单词</option>
       </select>
       接口</label>
     </div>
@@ -83,7 +81,7 @@
       <input type="range" name="showDuration" min="3" max="8" id="showDuration">
     </div>
   </div>
-  <footer>
+<!--  <footer>
     <div class="setting-button link" id="setting-button" title="设置"></div>
     Powered By <span id="powered-by"><img src="http://www.youdao.com/help/fanyiapi/brand/002.gif" alt="有道翻译"></span>
     <div class="contact-info">
@@ -92,13 +90,10 @@
       <span id="issue" class="link" title="在Github上提出问题或建议"></span>
       <span id="source" class="link" title="源码在这里，欢迎Fork"></span>
     </div>
-  </footer>
+  </footer>-->
 
   <script src="public/js/utility.min.js"></script>
   <script src="public/js/popup.min.js"></script>
-  <!--
-  <script src="src/javascript/utility.js"></script>
-  <script src="src/javascript/popup.js"></script>
-  -->
+
 </body>
 </html>
